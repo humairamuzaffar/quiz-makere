@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Archivo+Narrow|Lobster|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title> 
+</head>
+<body>
+<strong><h1>Online Quiz</h1><h1>Result:<span></span></h1></strong>
+    <!-- ----------------page1---------- -->
+<div id="page1" class="page">
+    <div class="box">
+        <h1>21-Frog has ---- eyelids.</h1>
+    <div class="option">
+    <input type="radio" name="one" id="x1">3
+    </div>
+    <div class="option">
+    <input type="radio" name="one"  id="x2">1
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="x3">2
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="x4">4
+    </div>
+    <button id="btn" onclick="check(event)">submit</button>
+    </div>
+<div class="box">
+    <h1>22-Who is the Prime Minister of Pakistan?</h1>
+<div class="option">
+<input type="radio" name="one" id="w1">Zardari
+</div>
+<div class="option">
+<input type="radio" name="one"  id="w2">Imran Khan
+</div>
+<div class="option">
+<input type="radio" name="one" id="w3">Bilawal
+</div>
+<div class="option">
+<input type="radio" name="one" id="w4">Nawaz Sharif
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>23-Which is the largest mountain of the world?</h1>
+<div class="option">
+<input type="radio" name="one" id="v1">K2
+</div>
+<div class="option">
+<input type="radio" name="one"  id="v2">Himalia
+</div>
+<div class="option">
+<input type="radio" name="one" id="v3">Mount Everst
+</div>
+<div class="option">
+<input type="radio" name="one" id="v4">Nangaparbat
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>24-What is the capital of Pakistan?</h1>
+<div class="option">
+<input type="radio" name="one" id="u1">Faislabad
+</div>
+<div class="option">
+<input type="radio" name="one"  id="u2">Lahore
+</div>
+<div class="option">
+<input type="radio" name="one" id="u3">Karachi
+</div>
+<div class="option">
+<input type="radio" name="one" id="u4">Islamabad
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+<button id="next" onclick="nextPage1()">Next</button>
+</div>
+
+ <!-- ----------------page2---------- -->
+<div id="page2" class="page">
+    <div class="box">
+        <h1>17-How many provinces Pakistan has?</h1>
+    <div class="option">
+    <input type="radio" name="one" id="t1">4
+    </div>
+    <div class="option">
+    <input type="radio" name="one"  id="t2">1
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="t3">2
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="t4">3
+    </div>
+    <button id="btn" onclick="check(event)">submit</button>
+    </div>
+<div class="box">
+    <h1>18-Heart has _____ chambers.</h1>
+<div class="option">
+<input type="radio" name="one" id="s1">2
+</div>
+<div class="option">
+<input type="radio" name="one"  id="s2">4
+</div>
+<div class="option">
+<input type="radio" name="one" id="s3">6
+</div>
+<div class="option">
+<input type="radio" name="one" id="s4">8
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>19-Which one is a continent?</h1>
+<div class="option">
+<input type="radio" name="one" id="r1">China
+</div>
+<div class="option">
+<input type="radio" name="one"  id="r2">Greenland
+</div>
+<div class="option">
+<input type="radio" name="one" id="r3">Asia
+</div>
+<div class="option">
+<input type="radio" name="one" id="r4">Hawaii
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>20-Where could you find an elephant?</h1>
+<div class="option">
+<input type="radio" name="one" id="q1">Zoo
+</div>
+<div class="option">
+<input type="radio" name="one"  id="q2">Africa
+</div>
+<div class="option">
+<input type="radio" name="one" id="q3">Asia
+</div>
+<div class="option">
+<input type="radio" name="one" id="q4">All of these
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+<button id="next" onclick="nextPage2()">Next</button>
+</div>
+ <!-- ----------------page3---------- -->
+<div id="page3" class="page">
+    <div class="box">
+        <h1>13-Which is closest to the Earth?</h1>
+    <div class="option">
+    <input type="radio" name="one" id="p1">Moon
+    </div>
+    <div class="option">
+    <input type="radio" name="one"  id="p2">Sun
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="p3">Jupiter
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="p4">Saturn
+    </div>
+    <button id="btn" onclick="check(event)">submit</button>
+    </div>
+<div class="box">
+    <h1>14-What word rymes with fly?</h1>
+<div class="option">
+<input type="radio" name="one" id="o1">flip
+</div>
+<div class="option">
+<input type="radio" name="one"  id="o2">try
+</div>
+<div class="option">
+<input type="radio" name="one" id="o3">sat
+</div>
+<div class="option">
+<input type="radio" name="one" id="o4">fin
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>15-What word would we use to describe sky?</h1>
+<div class="option">
+<input type="radio" name="one" id="n1">muddy
+</div>
+<div class="option">
+<input type="radio" name="one"  id="n2">gruff
+</div>
+<div class="option">
+<input type="radio" name="one" id="n3">blue
+</div>
+<div class="option">
+<input type="radio" name="one" id="n4">cute
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>16-Where is the United State located?</h1>
+<div class="option">
+<input type="radio" name="one" id="m1">Asia
+</div>
+<div class="option">
+<input type="radio" name="one"  id="m2">Africa
+</div>
+<div class="option">
+<input type="radio" name="one" id="m3">South America
+</div>
+<div class="option">
+<input type="radio" name="one" id="m4">North America
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+<button id="next" onclick="nextPage3()">Next</button>
+</div>
+ <!-- ----------------page4---------- -->
+<div id="page4" class="page">
+    <div class="box">
+        <h1>9-What do you need to grow a plant?</h1>
+    <div class="option">
+    <input type="radio" name="one" id="l1">seeds
+    </div>
+    <div class="option">
+    <input type="radio" name="one"  id="l2">eggs
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="l3">dust
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="l4">splinters
+    </div>
+    <button id="btn" onclick="check(event)">submit</button>
+    </div>
+<div class="box">
+    <h1>10-How many hands do most people have?</h1>
+<div class="option">
+<input type="radio" name="one" id="k1">1
+</div>
+<div class="option">
+<input type="radio" name="one"  id="k2">2
+</div>
+<div class="option">
+<input type="radio" name="one" id="k3">3
+</div>
+<div class="option">
+<input type="radio" name="one" id="k4">4
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>11-How many minutes are there in half an hour?</h1>
+<div class="option">
+<input type="radio" name="one" id="j1">90
+</div>
+<div class="option">
+<input type="radio" name="one"  id="j2">60
+</div>
+<div class="option">
+<input type="radio" name="one" id="j3">30
+</div>
+<div class="option">
+<input type="radio" name="one" id="j4">20
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>12-What would you use to measure the length of a book?</h1>
+<div class="option">
+<input type="radio" name="one" id="i1">map
+</div>
+<div class="option">
+<input type="radio" name="one"  id="i2">thermometer
+</div>
+<div class="option">
+<input type="radio" name="one" id="i3">vernier callipers
+</div>
+<div class="option">
+<input type="radio" name="one" id="i4">a ruler
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+<button id="next" onclick="nextPage4()">Next</button>
+</div>
+ <!-- ----------------page5---------- -->
+<div id="page5" class="page">
+    <div class="box">
+        <h1>5-Complete sentence: I run, she runs, we ______.</h1>
+    <div class="option">
+    <input type="radio" name="one" id="h1">run
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="h2">runs
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="h3">runned
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="h4">running
+    </div>
+    <button id="btn" onclick="check(event)">submit</button>
+    </div>
+<div class="box">
+    <h1>6-What season is the coldest one?</h1>
+<div class="option">
+<input type="radio" name="one" id="g1">summer
+</div>
+<div class="option">
+<input type="radio" name="one"  id="g2">winter
+</div>
+<div class="option">
+<input type="radio" name="one" id="g3">autumn
+</div>
+<div class="option">
+<input type="radio" name="one" id="g4">spring
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>7-What is the Sun?</h1>
+<div class="option">
+<input type="radio" name="one" id="f1">planet
+</div>
+<div class="option">
+<input type="radio" name="one"  id="f2">Moon
+</div>
+<div class="option">
+<input type="radio" name="one" id="f3">Star
+</div>
+<div class="option">
+<input type="radio" name="one" id="f4">comet
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>8-Which is not a colour in the rainbow?</h1>
+<div class="option">
+<input type="radio" name="one" id="e1">blue
+</div>
+<div class="option">
+<input type="radio" name="one"  id="e2">green
+</div>
+<div class="option">
+<input type="radio" name="one" id="e3">red
+</div>
+<div class="option">
+<input type="radio" name="one" id="e4">black
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+<button id="next" onclick="nextPage5()">Next</button>
+</div>
+ <!-- ----------------page6---------- -->
+<div id="page6" class="page">
+    <div class="box">
+        <h1>1-How many moons does Earth have?</h1>
+    <div class="option">
+    <input type="radio" name="one" id="d1">1
+    </div>
+    <div class="option">
+    <input type="radio" name="one"  id="d2">2
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="d3">5
+    </div>
+    <div class="option">
+    <input type="radio" name="one" id="d4">10
+    </div>
+    <button id="btn" onclick="check(event)">submit</button>
+    </div>
+<div class="box">
+    <h1>2-What can many birds do?</h1>
+<div class="option">
+<input type="radio" name="one" id="c1">write
+</div>
+<div class="option">
+<input type="radio" name="one"  id="c2">fly
+</div>
+<div class="option">
+<input type="radio" name="one" id="c3">purr
+</div>
+<div class="option">
+<input type="radio" name="one" id="c4">read
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>3-How many legs does a snake have?</h1>
+<div class="option">
+<input type="radio" name="one" id="b1">1
+</div>
+<div class="option">
+<input type="radio" name="one"  id="b2">2
+</div>
+<div class="option">
+<input type="radio" name="one" id="b3">0
+</div>
+<div class="option">
+<input type="radio" name="one" id="b4">6
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+
+<div class="box">
+    <h1>4-Which one is extinct?</h1>
+<div class="option">
+<input type="radio" name="one" id="a1">cows
+</div>
+<div class="option">
+<input type="radio" name="one"  id="a2">elephants
+</div>
+<div class="option">
+<input type="radio" name="one" id="a3">lions
+</div>
+<div class="option">
+<input type="radio" name="one" id="a4">dinosaurs
+</div>
+<button id="btn" onclick="check(event)">submit</button>
+</div>
+<button id="next" onclick="nextPage6()">Next</button>
+</div>
+
+
+
+    <script>
+var result=document.getElementsByTagName('span')[0]
+var page1=document.getElementById('page1')
+var x1=document.getElementById('x1')
+var w2=document.getElementById('w2')
+var v3=document.getElementById('v3')
+var u4=document.getElementById('u4')
+var page2=document.getElementById('page2')
+var t1=document.getElementById('t1')
+var s2=document.getElementById('s2')
+var r3=document.getElementById('r3')
+var u4=document.getElementById('u4')
+var page3=document.getElementById('page3')
+var p1=document.getElementById('p1')
+var o2=document.getElementById('o2')
+var n3=document.getElementById('n3')
+var m4=document.getElementById('m4')
+var page4=document.getElementById('page4')
+var l1=document.getElementById('l1')
+var k2=document.getElementById('k2')
+var j3=document.getElementById('j3')
+var i4=document.getElementById('i4')
+var page5=document.getElementById('page5')
+var h1=document.getElementById('h1')
+var g2=document.getElementById('g2')
+var f3=document.getElementById('f3')
+var e4=document.getElementById('e4')
+var page6=document.getElementById('page6')
+var d1=document.getElementById('d1')
+var c2=document.getElementById('c2')
+var b3=document.getElementById('b3')
+var a4=document.getElementById('a4')
+var counter=0;
+function check(e){
+if(d1.checked){
+counter++;
+}
+else if(c2.checked){
+counter++;
+}
+else if(b3.checked){
+counter++;
+}
+else if(a4.checked){   
+counter++;
+}
+else if(h1.checked){
+counter++;
+}
+else if(g2.checked){
+counter++;
+}
+else if(f3.checked){
+counter++;
+}
+else if(e4.checked){   
+counter++;
+}
+else if(l1.checked){
+counter++;
+}
+else if(k2.checked){
+counter++;
+}
+else if(j3.checked){
+counter++;
+}
+else if(i4.checked){   
+counter++;
+}
+else if(p1.checked){
+counter++;
+}
+else if(o2.checked){
+counter++;
+}
+else if(n3.checked){
+counter++;
+}
+else if(m4.checked){   
+counter++;
+}
+else if(t1.checked){
+counter++;
+}
+else if(s2.checked){
+counter++;
+}
+else if(r3.checked){
+counter++;
+}
+else if(q4.checked){   
+counter++;
+}
+else if(x1.checked){
+counter++;
+}
+else if(w2.checked){
+counter++;
+}
+else if(v3.checked){
+counter++;
+}
+else if(u4.checked){   
+counter++;
+}
+result.innerHTML=counter;
+}
+
+
+//   ----------------next page-------
+
+function nextPage2(){
+page2.style.display="none";
+}
+function nextPage3(){
+page3.style.display="none";
+}
+function nextPage4(){
+page4.style.display="none";
+}
+function nextPage5(){
+page5.style.display="none";
+}
+function nextPage6(){
+page6.style.display="none";
+}
+    </script>
+</body>
+</html>
